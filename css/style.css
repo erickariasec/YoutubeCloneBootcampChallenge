@@ -2,9 +2,14 @@
 
 :root {
     --main-background-color: #212121;
-    --nav-background-color: #424242;
-    --nav-background-transparent-color: rgba( 40, 40, 40, 0.8 );
+    --nav-background-color: rgba(33, 33, 33, 0.98);
+    --nav-background-transparent-color-top: rgba( 40, 40, 40, 0.8 );
+    --nav-background-color-left: #212121;
     --ad-yt-premium-background-color: rgba(2,2,2,1);
+    --searchbox-background-color: hsl(0, 0%, 7%);
+    --searchbox-text-color: hsla(0, 100%, 100%, 0.88);
+    --searchbox-legacy-border-color: hsl(0, 0%, 18.82%);
+    --searchbox-legacy-border-color-active: #065fd4;
     --white-font-color: #fff;
     --roboto-font: 'Roboto', sans-serif
 }
@@ -18,10 +23,60 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--nav-background-transparent-color);
+    background-color: var(--nav-background-color);
     color: var(--white-font-color);
     font-family: var(--roboto-font);
     font-size: 62.5%;
+}
+
+.nav-top {
+    width: 83vw;
+    height: 12vh;
+    top: 0;
+    right: 0;
+    background-color: var(--nav-background-color);
+    position: fixed;
+}
+.nav-top .search {
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-top .search .search-bar {
+    width: 50%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.nav-top .search .search-bar .left {
+    background-color: var(--nav-background-transparent-color-top);
+    padding: 0.1rem 0 0.1rem 0.1rem;
+}
+.nav-top .search .search-bar .left i {
+    padding: 0 1.7rem 0 1.3rem;
+}
+.nav-top .search .search-bar .left input {
+    width: 400px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    border: var(--searchbox-legacy-border-color);
+    background-color: var(--searchbox-background-color);
+    color: var(--searchbox-text-color);
+}
+.nav-top .search .search-bar .right i {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--searchbox-background-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-top .tags {
+    height: 50%;
 }
 
 main {
