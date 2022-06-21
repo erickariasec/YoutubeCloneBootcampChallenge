@@ -1,5 +1,101 @@
+:root {
+    --main-background-color: #212121;
+    --nav-background-color: #424242;
+    --nav-background-transparent-color: rgba( 40, 40, 40, 0.8 );
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--nav-background-transparent-color)
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: end;
+    align-items: end;
+}
+
+.videos-section {
+    width: 83vw;
+    height: 88vh;
+    background-color: var(--main-background-color);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+        "ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium"
+        "ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium ad-yt-premium"
+        "video-1 video-1 video-1 video-2 video-2 video-2 video-3 video-3 video-3 video-4 video-4 video-4"
+        "video-5 video-5 video-5 video-6 video-6 video-6 video-7 video-7 video-7 video-8 video-8 video-8"
+        "short-1 short-1 short-2 short-2 short-3 short-3 short-4 short-4 short-5 short-5 short-6 short-6"
+        "short-1 short-1 short-2 short-2 short-3 short-3 short-4 short-4 short-5 short-5 short-6 short-6"
+        "video-9 video-9 video-9 video-10 video-10 video-10 video-11 video-11 video-11 video-12 video-12 video-12";
+    gap: 20px;
+}
+
+.ad-yt-premium {
+    grid-area: ad-yt-premium;
+}
+.video-1 {
+    grid-area: video-1;
+}
+.video-2 {
+    grid-area: video-2;
+}
+.video-3 {
+    grid-area: video-3;
+}
+.video-4 {
+    grid-area: video-4;
+}
+.video-5 {
+    grid-area: video-5;
+}
+.video-6 {
+    grid-area: video-6;
+}
+.video-7 {
+    grid-area: video-7;
+}
+.video-8 {
+    grid-area: video-8;
+}
+.short-1 {
+    grid-area: short-1;
+}
+.short-2 {
+    grid-area: short-2;
+}
+.short-3 {
+    grid-area: short-3;
+}
+.short-4 {
+    grid-area: short-4;
+}
+.short-5 {
+    grid-area: short-5;
+}
+.short-6 {
+    grid-area: short-6;
+}
+.video-9 {
+    grid-area: video-9;
+}
+.video-10 {
+    grid-area: video-10;
+}
+.video-11 {
+    grid-area: video-11;
+}
+.video-12 {
+    grid-area: video-12;
 }
