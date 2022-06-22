@@ -53,9 +53,13 @@ body {
 .nav-top .search .search-bar .left {
     background-color: var(--nav-background-transparent-color-top);
     padding: 0.1rem 0 0.1rem 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .nav-top .search .search-bar .left i {
-    padding: 0 1.7rem 0 1.3rem;
+    padding: 0 1.3rem;
+    cursor: pointer;
 }
 .nav-top .search .search-bar .left input {
     width: 400px;
