@@ -90,6 +90,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.nav-top .search .search-bar .right i:active {
+    background-color: var(--tag-button-background-color);
+}
 
 /* NAV TAGS */
 .nav-top .tags {
@@ -123,6 +126,33 @@ body {
     background-color: var(--nav-left-background-color);
     grid-area: nav-left;
     z-index: 999;
+}
+.nav-left .logo {
+    width: 100%;
+    height: 50px;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+    position: fixed;
+    top: 0;
+}
+.nav-left .logo i {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.1rem;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-left .logo i:active {
+    border-radius: 50%;
+    background-color: var(--tag-button-background-color);
+}
+.nav-left .logo .yt-logo {
+    height: 2.5rem;
 }
 
 .main {
