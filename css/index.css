@@ -12,6 +12,7 @@
     --searchbox-legacy-border-color: hsl(0, 0%, 18.82%);
     --searchbox-legacy-border-color-active: #065fd4;
     --border-line-color: rgba(255, 255, 255, 0.1);
+    --tag-button-background-color: rgba(255, 255, 255, 0.1);
     --white-font-color: #fff;
     --roboto-font: 'Roboto', sans-serif
 }
@@ -59,8 +60,9 @@ body {
     gap: 0.8rem;
 }
 .nav-top .search .search-bar .left {
-    background-color: var(--nav-background-transparent-color-top);
     padding: 0.1rem 0 0.1rem 0.1rem;
+    border-radius: 0.2rem;
+    background-color: var(--nav-background-transparent-color-top);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -87,8 +89,32 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* NAV TAGS */
 .nav-top .tags {
     height: 50%;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-top .tags button {
+    padding: 0.5rem 0.8rem;
+    border: 1px solid var(--border-line-color);
+    border-radius: 2rem;
+    background-color: var(--tag-button-background-color);
+    font-size: 0.9rem;
+    color: var(--white-font-color);
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.nav-top .tags button:hover {
+    background-color: #686868;
+}
+.nav-top .tags button:focus {
+    background-color: var(--white-font-color);
+    color: var(--main-background-color);
 }
 
 /* NAV LEFT */
