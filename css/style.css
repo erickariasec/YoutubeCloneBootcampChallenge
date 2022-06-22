@@ -29,6 +29,7 @@ body {
     font-size: 62.5%;
 }
 
+/* NAV TOP  */
 .nav-top {
     width: 83vw;
     height: 12vh;
@@ -91,7 +92,8 @@ main {
     align-items: end;
 }
 
-.videos-section {
+/* VIDEOS SECTION */
+main .videos-section {
     width: 83vw;
     height: 88vh;
     background-color: var(--main-background-color);
@@ -109,7 +111,7 @@ main {
     gap: 20px;
 }
 
-.ad-yt-premium {
+main .videos-section .ad-yt-premium {
     padding: 2rem;
     grid-area: ad-yt-premium;
     background-color: var(--ad-yt-premium-background-color);
@@ -117,71 +119,71 @@ main {
     flex-direction: column;
     justify-content: space-between;
 }
-.ad-yt-premium .top img {
+main .videos-section .ad-yt-premium .top img {
     width: 20rem;
     margin-bottom: 0.7rem;
 }
-.ad-yt-premium .top h2 {
+main .videos-section .ad-yt-premium .top h2 {
     font-size: 1.7rem;
 }
-.ad-yt-premium .bottom button {
+main .videos-section .ad-yt-premium .bottom button {
     padding: 0.5rem 1rem;
     color: var(--white-font-color);
     background: none;
     border: 2px solid;
     cursor: pointer;
 }
-.video-1 {
+main .videos-section .video-1 {
     grid-area: video-1;
 }
-.video-2 {
+main .videos-section .video-2 {
     grid-area: video-2;
 }
-.video-3 {
+main .videos-section .video-3 {
     grid-area: video-3;
 }
-.video-4 {
+main .videos-section .video-4 {
     grid-area: video-4;
 }
-.video-5 {
+main .videos-section .video-5 {
     grid-area: video-5;
 }
-.video-6 {
+main .videos-section .video-6 {
     grid-area: video-6;
 }
-.video-7 {
+main .videos-section .video-7 {
     grid-area: video-7;
 }
-.video-8 {
+main .videos-section .video-8 {
     grid-area: video-8;
 }
-.short-1 {
+main .videos-section .short-1 {
     grid-area: short-1;
 }
-.short-2 {
+main .videos-section .short-2 {
     grid-area: short-2;
 }
-.short-3 {
+main .videos-section .short-3 {
     grid-area: short-3;
 }
-.short-4 {
+main .videos-section .short-4 {
     grid-area: short-4;
 }
-.short-5 {
+main .videos-section .short-5 {
     grid-area: short-5;
 }
-.short-6 {
+main .videos-section .short-6 {
     grid-area: short-6;
 }
-.video-9 {
+main .videos-section .video-9 {
     grid-area: video-9;
 }
-.video-10 {
+main .videos-section .video-10 {
     grid-area: video-10;
 }
-.video-11 {
+main .videos-section .video-11 {
     grid-area: video-11;
 }
-.video-12 {
+main .videos-section .video-12 {
     grid-area: video-12;
 }
