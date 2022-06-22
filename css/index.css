@@ -26,14 +26,15 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: var(--nav-background-color);
+    background-color: var(--main-background-color);
     color: var(--white-font-color);
     font-family: var(--roboto-font);
     font-size: 62.5%;
     display: grid;
+    grid-template-columns: 18vw 82vw;
     grid-template-areas: 
-        "nav-left nav-top nav-top nav-top"
-        "nav-left main main main";
+        "nav-left nav-top"
+        "nav-left main";
 }
 
 /* NAV TOP  */
@@ -121,6 +122,7 @@ body {
 .nav-left {
     background-color: var(--nav-left-background-color);
     grid-area: nav-left;
+    z-index: 999;
 }
 
 .main {
