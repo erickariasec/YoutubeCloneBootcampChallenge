@@ -213,35 +213,76 @@ input:focus {
 }
 .main .videos-section .yt-video {
     width: 100%;
-    height: 50%;
+    height: 60%;
     border: 1px solid white;
+    background-size: cover;
+}
+.main .videos-section .yt-video iframe {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.main .videos-section .yt-video iframe:hover {
+    opacity: 1;
 }
 .main .videos-section .video-1 {
     grid-area: video-1;
     display: flex;
     flex-direction: column;
 }
+.main .videos-section .video-1 .yt-video {
+    background-image: url("../img/yt-videos/enchufetv-sketch.webp");
+}
+
 .main .videos-section .video-2 {
     grid-area: video-2;
 }
+.main .videos-section .video-2 .yt-video {
+    background-image: url("../img/yt-videos/luisito-comunica.webp");
+}
+
 .main .videos-section .video-3 {
     grid-area: video-3;
 }
+.main .videos-section .video-3 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-4 {
     grid-area: video-4;
 }
+.main .videos-section .video-4 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-5 {
     grid-area: video-5;
 }
+.main .videos-section .video-5 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-6 {
     grid-area: video-6;
 }
+.main .videos-section .video-6 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-7 {
     grid-area: video-7;
 }
+.main .videos-section .video-7 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-8 {
     grid-area: video-8;
 }
+.main .videos-section .video-8 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .short-1 {
     grid-area: short-1;
 }
@@ -263,12 +304,27 @@ input:focus {
 .main .videos-section .video-9 {
     grid-area: video-9;
 }
+.main .videos-section .video-9 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-10 {
     grid-area: video-10;
 }
+.main .videos-section .video-10 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-11 {
     grid-area: video-11;
 }
+.main .videos-section .video-11 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
+}
+
 .main .videos-section .video-12 {
     grid-area: video-12;
+}
+.main .videos-section .video-12 .yt-video {
+    background-image: url("../img/yt-videos/auron-play.webp");
 }
