@@ -14,6 +14,7 @@
     --border-line-color: rgba(255, 255, 255, 0.1);
     --tag-button-background-color: rgba(255, 255, 255, 0.1);
     --white-font-color: #fff;
+    --description-video-color-font: #aaa;
     --roboto-font: 'Roboto', sans-serif
 }
 
@@ -209,12 +210,11 @@ input:focus {
     cursor: pointer;
 }
 .main .videos-section article {
-    border: 1px solid white;
+    cursor: pointer;
 }
 .main .videos-section .yt-video {
     width: 100%;
     height: 60%;
-    border: 1px solid white;
     background-size: cover;
 }
 .main .videos-section .yt-video iframe {
@@ -224,6 +224,51 @@ input:focus {
 }
 .main .videos-section .yt-video iframe:hover {
     opacity: 1;
+}
+.main .videos-section .yt-video-description {
+    display: flex;
+    flex-direction: column;
+}
+.main .videos-section .yt-video-description .top {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.7rem;
+}
+.main .videos-section .yt-video-description .top img {
+    width: 40px;
+    border-radius: 50%;
+}
+.main .videos-section .yt-video-description .bottom {
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 0.7rem;
+}
+.main .videos-section .yt-video-description .bottom .left {
+    width: 40px;
+    border-radius: 50%;
+}
+.main .videos-section .yt-video-description .bottom .right {
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: var(--description-video-color-font);
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    transition: 0.3s all;
+}
+.main .videos-section .yt-video-description .bottom .right :nth-child(1):hover {
+    color: var(--white-font-color);
+}
+.main .videos-section .yt-video-description .bottom .right :nth-child(1) i {
+    font-size: 0.7rem;
+    color: var(--description-video-color-font);
+}
+.main .videos-section .yt-video-description .bottom .right :nth-child(1) i:hover {
+    color: var(--description-video-color-font);
 }
 .main .videos-section .video-1 {
     grid-area: video-1;
