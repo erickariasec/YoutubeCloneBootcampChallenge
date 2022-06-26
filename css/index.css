@@ -206,7 +206,7 @@ input:focus {
     /* border: 1px solid #fff; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 250px) 75px 350px 75px 250px;
+    grid-template-rows: repeat(2, 250px) 75px 350px 60px 250px;
     grid-template-areas: 
         "video-1 video-1 video-1 video-2 video-2 video-2 video-3 video-3 video-3 video-4 video-4 video-4"
         "video-5 video-5 video-5 video-6 video-6 video-6 video-7 video-7 video-7 video-8 video-8 video-8"
