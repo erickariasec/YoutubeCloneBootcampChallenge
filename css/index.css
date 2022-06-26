@@ -196,12 +196,13 @@ input:focus {
 
 .main .videos-section {
     width: 100%;
-    height: 1000px;
+    height: 1270px;
     padding: 3.5rem 1.5rem;
     background-color: var(--main-background-color);
+    border: 1px solid;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 250px) 400px 250px;
+    grid-template-rows: repeat(2, 250px) 350px 250px;
     grid-template-areas: 
         "video-1 video-1 video-1 video-2 video-2 video-2 video-3 video-3 video-3 video-4 video-4 video-4"
         "video-5 video-5 video-5 video-6 video-6 video-6 video-7 video-7 video-7 video-8 video-8 video-8"
@@ -211,6 +212,7 @@ input:focus {
 }
 .main .videos-section article {
     cursor: pointer;
+    border: 1px solid #fff;
 }
 .main .videos-section .yt-video {
     width: 100%;
@@ -230,7 +232,7 @@ input:focus {
     flex-direction: column;
 }
 .main .videos-section .yt-video-description .top {
-    padding: 0.5rem;
+    padding: 0.7rem 0;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -241,7 +243,7 @@ input:focus {
     border-radius: 50%;
 }
 .main .videos-section .yt-video-description .bottom {
-    padding: 0 0.5rem;
+    padding: 0 0.3rem;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -270,6 +272,21 @@ input:focus {
 .main .videos-section .yt-video-description .bottom .right :nth-child(1) i:hover {
     color: var(--description-video-color-font);
 }
+
+.main .videos-section .short-video {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.main .videos-section .short-video iframe {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.main .videos-section .short-video iframe:hover {
+    opacity: 1;
+}
+
 .main .videos-section .video-1 {
     grid-area: video-1;
     display: flex;
@@ -331,21 +348,45 @@ input:focus {
 .main .videos-section .short-1 {
     grid-area: short-1;
 }
+.main .videos-section .short-1 .short-video {
+    background-image: url("../img/short-videos/short-1.jpg");
+}
+
 .main .videos-section .short-2 {
     grid-area: short-2;
 }
+.main .videos-section .short-2 .short-video {
+    background-image: url("../img/short-videos/short-2.jpg");
+}
+
 .main .videos-section .short-3 {
     grid-area: short-3;
 }
+.main .videos-section .short-3 .short-video {
+    background-image: url("../img/short-videos/short-3.jpg");
+}
+
 .main .videos-section .short-4 {
     grid-area: short-4;
 }
+.main .videos-section .short-4 .short-video {
+    background-image: url("../img/short-videos/short-4.jpg");
+}
+
 .main .videos-section .short-5 {
     grid-area: short-5;
 }
+.main .videos-section .short-5 .short-video {
+    background-image: url("../img/short-videos/short-5.jpg");
+}
+
 .main .videos-section .short-6 {
     grid-area: short-6;
 }
+.main .videos-section .short-6 .short-video {
+    background-image: url("../img/short-videos/short-6.jpg");
+}
+
 .main .videos-section .video-9 {
     grid-area: video-9;
 }
