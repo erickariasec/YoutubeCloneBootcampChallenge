@@ -13,6 +13,7 @@
     --searchbox-legacy-border-color-active: #065fd4;
     --border-line-color: rgba(255, 255, 255, 0.1);
     --tag-button-background-color: rgba(255, 255, 255, 0.1);
+    --separator-color: rgba(255, 255, 255, 0.1);
     --white-font-color: #fff;
     --description-video-color-font: #aaa;
     --roboto-font: 'Roboto', sans-serif
@@ -196,23 +197,24 @@ input:focus {
 
 .main .videos-section {
     width: 100%;
-    height: 1270px;
+    height: 1360px;
     padding: 3.5rem 1.5rem;
     background-color: var(--main-background-color);
-    border: 1px solid;
+    /* border: 1px solid #fff; */
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(2, 250px) 350px 250px;
+    grid-template-rows: repeat(2, 250px) 75px 350px 250px;
     grid-template-areas: 
         "video-1 video-1 video-1 video-2 video-2 video-2 video-3 video-3 video-3 video-4 video-4 video-4"
         "video-5 video-5 video-5 video-6 video-6 video-6 video-7 video-7 video-7 video-8 video-8 video-8"
+        "shorts shorts shorts shorts shorts shorts shorts shorts shorts shorts shorts shorts"
         "short-1 short-1 short-2 short-2 short-3 short-3 short-4 short-4 short-5 short-5 short-6 short-6"
         "video-9 video-9 video-9 video-10 video-10 video-10 video-11 video-11 video-11 video-12 video-12 video-12";
-    gap: 20px;
+    gap: 38px 16px;
 }
 .main .videos-section article {
     cursor: pointer;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 }
 .main .videos-section .yt-video {
     width: 100%;
@@ -271,6 +273,28 @@ input:focus {
 }
 .main .videos-section .yt-video-description .bottom .right :nth-child(1) i:hover {
     color: var(--description-video-color-font);
+}
+
+.main .videos-section .shorts {
+    width: 100%;
+    height: 100%;
+    border-top: 4px solid var(--separator-color);
+    grid-area: shorts;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.main .videos-section .shorts .all-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+.main .videos-section .shorts .all-logo img {
+    width: 2.5rem;
+}
+.main .videos-section .shorts .all-logo .shorts-title {
+    font-size: 1.5rem;
 }
 
 .main .videos-section .short-video {
