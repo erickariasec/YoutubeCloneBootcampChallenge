@@ -249,7 +249,6 @@ input:focus {
     border-radius: 50%;
 }
 .main .videos-section .yt-video-description .bottom {
-    padding: 0 0.3rem;
     display: flex;
     justify-content: start;
     align-items: center;
