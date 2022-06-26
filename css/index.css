@@ -133,6 +133,9 @@ input:focus {
 
 /* NAV LEFT */
 .nav-left {
+    width: 18vw;
+    height: 100vh;
+    position: fixed;
     background-color: var(--nav-left-background-color);
     grid-area: nav-left;
     z-index: 999;
