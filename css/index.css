@@ -269,6 +269,25 @@ input:focus {
     font-size: 0.8rem;
     cursor: text;
 }
+.nav-left .nav-left-content .content-8 .item-1 {
+    padding-bottom: 1.7rem;
+    font-size: 0.8rem;
+    display: flex;
+    color: #aaa;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+.nav-left .nav-left-content .content-8 .item-1:hover {
+    background-color: var(--nav-background-color-left);
+    font-weight: 400;
+}
+.nav-left .nav-left-content .content-8 .item-1 .copyright {
+    color: #717171;
+    cursor: text;
+}
 
 .main {
     width: 100%;
