@@ -262,6 +262,12 @@ input:focus {
     justify-content: center;
     align-items: center;
 }
+.nav-left .nav-left-content .content-6 .item-title {
+    background-color: var(--nav-background-color-left);
+    color: var(--description-video-color-font);
+    font-size: 0.8rem;
+    cursor: text;
+}
 
 .main {
     width: 100%;
