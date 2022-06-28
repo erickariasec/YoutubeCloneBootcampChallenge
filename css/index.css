@@ -187,6 +187,7 @@ input:focus {
     justify-content: flex-start;
     align-items: center;
     gap: 1.6rem;
+    cursor: pointer;
 }
 .nav-left .nav-left-content article div:hover {
     background-color: var(--border-line-color);
@@ -213,6 +214,8 @@ input:focus {
 }
 .nav-left .nav-left-content .content-3 .item-1:hover {
     background-color: var(--nav-background-color-left);
+    font-weight: 400;
+    cursor: default;
 }
 .nav-left .nav-left-content .content-3 .item-1 button {
     padding: 0.5rem 0.9rem;
@@ -223,13 +226,16 @@ input:focus {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    cursor: pointer;
 }
 .nav-left .nav-left-content .content-3 .item-1 button i {
     font-weight: lighter;
 }
 .nav-left .nav-left-content .content-4 .item-title {
+    background-color: var(--nav-background-color-left);
     color: var(--description-video-color-font);
     font-size: 0.8rem;
+    cursor: text;
 }
 .nav-left .nav-left-content .content-4 div {
     padding: 0.6rem 1.6rem;
