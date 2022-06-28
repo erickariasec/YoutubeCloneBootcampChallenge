@@ -65,7 +65,7 @@ body {
 
 /* NAV TOP  */
 .nav-top {
-    width: 100vw;
+    width: 82vw;
     height: 100px;
     position: fixed;
     top: 0;
@@ -75,18 +75,29 @@ body {
 }
 .nav-top .search {
     height: 50%;
-    display: flex;
+    width: 82vw;
     border-bottom: 1px solid var(--border-line-color);
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .nav-top .search .search-bar {
+    width: 100%;
     font-size: 1.1rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 0.8rem;
 }
-.nav-top .search .search-bar .left {
+.nav-top .search .search-bar .search-left {
+    width: 65vw;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.nav-top .search .search-bar .search-left .left-1 {
     padding: 0.1rem 0 0.1rem 0.1rem;
     border-radius: 0.2rem;
     background-color: var(--nav-background-transparent-color-top);
@@ -94,11 +105,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-.nav-top .search .search-bar .left i {
+.nav-top .search .search-bar .search-left .left-1 i {
     padding: 0 1.3rem;
     cursor: pointer;
 }
-.nav-top .search .search-bar .left input {
+.nav-top .search .search-bar .search-left .left-1 input {
     width: 400px;
     padding: 0.5rem 1rem;
     font-size: 1.1rem;
@@ -106,14 +117,14 @@ body {
     background-color: var(--searchbox-background-color);
     color: var(--searchbox-text-color);
 }
-.nav-top .search .search-bar .left input:active,
+.nav-top .search .search-bar .search-left .left-1 input:active,
 input:focus {
     outline-color: var(--searchbox-legacy-border-color-active);
     outline-offset: 0;
     box-shadow: none;
     border-color: var(--searchbox-legacy-border-color-active);
 }
-.nav-top .search .search-bar .right i {
+.nav-top .search .search-bar .search-left .left-2 i {
     width: 2.5rem;
     height: 2.5rem;
     background-color: var(--searchbox-background-color);
@@ -123,8 +134,34 @@ input:focus {
     justify-content: center;
     align-items: center;
 }
-.nav-top .search .search-bar .right i:active {
+.nav-top .search .search-bar .search-left .left-2 i:active {
     background-color: var(--tag-button-background-color);
+}
+
+.nav-top .search .search-bar .access {
+    width: 12vw;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-top .search .search-bar .access .right-1 {
+    margin-right: 1rem;
+}
+.nav-top .search .search-bar .access .right-3 button {
+    padding: 0.5rem 0.9rem;
+    border-color: var(--button-access-color);
+    background-color: transparent;
+    color: var(--button-access-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.nav-top .search .search-bar .access .right-3 button i {
+    font-weight: lighter;
 }
 
 /* NAV TAGS */
@@ -398,11 +435,11 @@ input:focus {
     align-items: center;
     gap: 0.7rem;
 }
-.main .videos-section .yt-video-description .bottom .left {
+.main .videos-section .yt-video-description .bottom .left-1 {
     width: 40px;
     border-radius: 50%;
 }
-.main .videos-section .yt-video-description .bottom .right {
+.main .videos-section .yt-video-description .bottom .left-2 {
     font-weight: 100;
     font-size: 0.8rem;
     color: var(--description-video-color-font);
@@ -411,10 +448,10 @@ input:focus {
     gap: 0.2rem;
     transition: 0.3s all;
 }
-.main .videos-section .yt-video-description .bottom .right :nth-child(1):hover {
+.main .videos-section .yt-video-description .bottom .left-2 :nth-child(1):hover {
     color: var(--white-font-color);
 }
-.main .videos-section .yt-video-description .bottom .right :nth-child(1) i {
+.main .videos-section .yt-video-description .bottom .left-2 :nth-child(1) i {
     font-size: 0.7rem;
     color: var(--description-video-color-font);
 }
@@ -422,7 +459,7 @@ input:focus {
     .videos-section
     .yt-video-description
     .bottom
-    .right
+    .left-2
     :nth-child(1)
     i:hover {
     color: var(--description-video-color-font);
