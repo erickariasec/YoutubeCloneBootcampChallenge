@@ -164,6 +164,7 @@ input:focus {
     overflow-y: scroll;
 }
 .nav-left .logo {
+    width: 18vw;
     height: 50px;
     padding-left: 1rem;
     background-color: var(--nav-left-background-color);
