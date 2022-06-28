@@ -190,9 +190,11 @@ input:focus {
 }
 .nav-left .nav-left-content article div:hover {
     background-color: var(--border-line-color);
+    font-weight: bold;
 }
 .nav-left .nav-left-content article div:active {
     background-color: #636363;
+    font-weight: bold;
 }
 .nav-left .nav-left-content article div i {
     width: 1.2rem;
