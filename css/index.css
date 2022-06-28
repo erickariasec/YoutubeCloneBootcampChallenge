@@ -60,6 +60,7 @@ body {
     grid-template-areas:
         "nav-left nav-top"
         "nav-left main";
+    overflow-x: hidden;
 }
 
 /* NAV TOP  */
