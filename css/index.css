@@ -437,11 +437,11 @@ input:focus {
     align-items: center;
     gap: 0.7rem;
 }
-.main .videos-section .yt-video-description .bottom .left-1 {
+.main .videos-section .yt-video-description .bottom .left {
     width: 40px;
     border-radius: 50%;
 }
-.main .videos-section .yt-video-description .bottom .left-2 {
+.main .videos-section .yt-video-description .bottom .right {
     font-weight: 100;
     font-size: 0.8rem;
     color: var(--description-video-color-font);
@@ -450,20 +450,14 @@ input:focus {
     gap: 0.2rem;
     transition: 0.3s all;
 }
-.main .videos-section .yt-video-description .bottom .left-2 :nth-child(1):hover {
+.main .videos-section .yt-video-description .bottom .right :nth-child(1):hover {
     color: var(--white-font-color);
 }
-.main .videos-section .yt-video-description .bottom .left-2 :nth-child(1) i {
+.main .videos-section .yt-video-description .bottom .right :nth-child(1) i {
     font-size: 0.7rem;
     color: var(--description-video-color-font);
 }
-.main
-    .videos-section
-    .yt-video-description
-    .bottom
-    .left-2
-    :nth-child(1)
-    i:hover {
+.main .videos-section .yt-video-description .bottom .right :nth-child(1) i:hover {
     color: var(--description-video-color-font);
 }
 
