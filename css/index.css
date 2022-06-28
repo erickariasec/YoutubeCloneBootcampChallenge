@@ -145,6 +145,7 @@ input:focus {
 .nav-left .logo {
     height: 50px;
     padding-left: 1rem;
+    background-color: var(--nav-left-background-color);
     display: flex;
     justify-content: flex-start;
     align-items: center;
