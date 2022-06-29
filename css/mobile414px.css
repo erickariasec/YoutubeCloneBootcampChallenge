@@ -26,6 +26,18 @@ body {
     align-items: center;
 }
 
+.nav-top .search {
+    width: 100%;
+}
+.nav-top .search .search-bar {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-top .search .search-bar .access {
+    display: none;
+}
+
 /* NAV LEFT */
 .nav-left {
     width: 0vw;
@@ -35,6 +47,10 @@ body {
     grid-area: nav-left;
     z-index: 999;
     overflow-y: scroll;
+}
+
+.nav-left .logo i {
+    display: none;
 }
 
 .main .videos-section {

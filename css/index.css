@@ -169,9 +169,9 @@ input:focus {
 /* NAV TAGS */
 .nav-top .tags {
     height: 50%;
-    padding-right: 1rem;
+    padding-left: 1rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     gap: 1rem;
 }
