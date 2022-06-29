@@ -55,7 +55,7 @@ body {
 
 .main .videos-section {
         grid-template-columns: 100%;
-        grid-template-rows: repeat(6, 250px) 75px 400px 60px repeat(6, 250px);
+        grid-template-rows: repeat(6, 250px) 75px 500px 60px repeat(6, 250px);
         grid-template-areas:
             "video-1"
             "video-2"
