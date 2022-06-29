@@ -1,0 +1,72 @@
+body {
+    grid-template-columns: 100vw;
+    grid-template-rows: 100px 100%;
+    grid-template-areas:
+        "nav-top"
+        "main";
+    overflow-x: hidden;
+}
+
+/* NAV TOP  */
+.nav-top {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--nav-background-color);
+    grid-area: nav-top;
+}
+.nav-top .search {
+    height: 50%;
+    width: 100%;
+    border-bottom: 1px solid var(--border-line-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-top .search {
+    width: 100%;
+}
+.nav-top .search .search-bar {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-top .search .search-bar .access {
+    display: none;
+}
+
+/* NAV LEFT */
+.nav-left {
+    width: 0vw;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--nav-left-background-color);
+    grid-area: nav-left;
+    z-index: 999;
+    overflow-y: scroll;
+}
+
+.nav-left .logo i {
+    display: none;
+}
+
+.main .videos-section {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 250px) 75px repeat(3, 600px) 60px repeat(3, 250px);
+    grid-template-areas:
+        "video-1 video-2"
+        "video-3 video-4"
+        "video-5 video-6"
+        "shorts shorts"
+        "short-1 short-2"
+        "short-3 short-4"
+        "short-5 short-6"
+        "tendencias tendencias"
+        "video-7 video-8"
+        "video-9 video-10"
+        "video-11 video-12";
+    gap: 38px 16px;
+}
