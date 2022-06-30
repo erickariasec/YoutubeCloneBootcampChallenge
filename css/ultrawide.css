@@ -1,0 +1,11 @@
+.main .videos-section {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 300px 75px 600px 60px 300px;
+    grid-template-areas:
+        "video-1 video-2 video-3 video-4 video-5 video-6"
+        "shorts shorts shorts shorts shorts shorts"
+        "short-1 short-2 short-3 short-4 short-5 short-6"
+        "tendencias tendencias tendencias tendencias tendencias tendencias"
+        "video-7 video-8 video-9 video-10 video-11 video-12";
+    gap: 38px 16px;
+}
