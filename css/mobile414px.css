@@ -1,3 +1,13 @@
+/* NAV TOP  */
+.nav-top .search .search-bar .search-left .left-1 {
+    background: none;
+    justify-content: flex-end;
+}
+.nav-top .search .search-bar .search-left .left-1 input {
+    display: none;
+}
+
+/* MAIN - VIDEOS SECTION */
 .main .videos-section {
         grid-template-columns: 100%;
         grid-template-rows: repeat(6, 250px) 75px 500px 60px repeat(6, 250px);
