@@ -40,16 +40,46 @@ body {
 
 /* NAV LEFT */
 .nav-left {
-    width: 0vw;
+    width: 18vw;
     height: 100vh;
     position: fixed;
-    background-color: var(--nav-left-background-color);
+    background: none;
     grid-area: nav-left;
     z-index: 999;
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .nav-left .logo i {
+    display: none;
+}
+
+.nav-left .nav-left-content article {
+    border-bottom: none;
+}
+
+.nav-left .nav-left-content .content-1 {
+    width: 100vw;
+    margin-top: 46px;
+    background-color: var(--nav-background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+.nav-left .nav-left-content .content-1 div p {
+    display: none;
+}
+
+.nav-left .nav-left-content .content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6,
+.content-7,
+.content-8 {
     display: none;
 }
 
